@@ -16,8 +16,8 @@ describe('Divide.js tests', () => {
   })
   it('number of arguments', () => {
     //expect(() => divide(1)).to.throw(TypeError)
-    expect(() => divide(1,2,3)).to.throw(TypeError)
-    expect(() => divide()).to.throw(TypeError)
+    expect(() => divide(1,2,3)).to.throw(Error)
+    expect(() => divide()).to.throw(Error)
   })
   it('incorrect parameter type', () => {
     expect(() => divide("asd", 1)).to.throw(TypeError)
